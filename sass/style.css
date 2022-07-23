@@ -19,6 +19,35 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  max-width: 94rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 12rem 0;
+}
+section h1,
+section h2 {
+  text-align: center;
+}
+section h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+}
+section h2 {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+}
+
 header {
   height: 70.246rem;
   background: url("../images/Tint.jpg") no-repeat center center fixed;
@@ -97,27 +126,6 @@ header .flex button:hover {
   box-shadow: 0rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 
-.wrapper {
-  max-width: 94rem;
-  margin: 0 auto;
-}
-
-.services {
-  padding: 12rem 0;
-}
-.services h1,
-.services h2 {
-  text-align: center;
-}
-.services h1 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 4rem;
-}
-.services h2 {
-  font-family: "Roboto Slab", serif;
-  font-style: italic;
-}
 .services .flex {
   display: flex;
   padding-top: 7.6rem;
@@ -140,12 +148,6 @@ header .flex button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.services .flex .service-example h3 {
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 1.8rem;
-  font-family: "Montserrat", sans-serif;
-}
 .services .flex .service-example p {
   font-family: "Roboto Slab", serif;
   font-size: 1.4rem;
@@ -153,4 +155,44 @@ header .flex button:hover {
 }
 .services .flex .third {
   padding-right: 0;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+.portfolio .flex {
+  padding-top: 7.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio .flex .portfolio-example {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 29rem;
+  max-height: 39rem;
+  padding: 1rem;
+}
+.portfolio .flex .portfolio-example .img {
+  overflow: hidden;
+}
+.portfolio .flex .portfolio-example .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  transition: 0.5s all ease-in-out;
+  opacity: 0.8;
+}
+.portfolio .flex .portfolio-example .img img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  cursor: pointer;
+}
+.portfolio .flex .portfolio-example .portfolio-description {
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
