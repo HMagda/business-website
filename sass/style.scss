@@ -1,0 +1,123 @@
+$color-light: #ffffff;
+$color-dark: #222222;
+$color-additional: #fed136;
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: droid-serif, serif;
+$font-family-tertiary: 'Roboto Slab', serif;
+
+* *::before *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; //I'll use rem so that the sizes will be based on the html font-size 1rem = 10px; 1.4rem = 14px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: $font-family-primary;
+}
+
+header {
+    height: 70.246rem;
+    background: url("../images/Tint.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    .navigation {
+        
+        padding-top: 4.7rem;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                    
+                img {
+                    height: 2.6rem;
+                }
+            }
+    
+            ul {
+                margin-top: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                    
+                li {
+                    padding-left: 2rem;
+    
+                    a {
+                        color: $color-light;
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        text-transform: uppercase;
+                        font-family: $font-family-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .flex {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h2,
+        h1 {
+            color: $color-light;
+        }
+    
+        h2 {
+            text-transform: capitalize;
+            font-style: italic;
+            font-family: $font-family-secondary;
+            font-size: 4rem;
+        }
+    
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 7.5rem;
+        }
+    
+        button {
+            font-family: $font-family-primary;
+            font-weight: bold;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: $color-light;
+            background-color: $color-additional;
+            width: 24rem;
+            height: 6.5rem;
+            border-radius: .5rem;
+            border: .5rem;
+            box-shadow: 0rem .5rem 1rem 0rem rgba(0, 0, 0, 0.5);
+            transition: all ease 0.2s;
+            
+            &:hover {
+                cursor: pointer;
+                color: $color-dark;
+                transform: translateY(-.5rem);
+                box-shadow: 0rem 1rem 2rem .2rem rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+.wrapper {
+    max-width: 94rem;
+    margin: 0 auto;
+}

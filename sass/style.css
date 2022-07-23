@@ -1,0 +1,99 @@
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 70.246rem;
+  background: url("../images/Tint.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+header .navigation {
+  padding-top: 4.7rem;
+}
+header .navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .navigation .container .logo img {
+  height: 2.6rem;
+}
+header .navigation .container ul {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header .navigation .container ul li {
+  padding-left: 2rem;
+}
+header .navigation .container ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+header .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .flex h2,
+header .flex h1 {
+  color: #ffffff;
+}
+header .flex h2 {
+  text-transform: capitalize;
+  font-style: italic;
+  font-family: droid-serif, serif;
+  font-size: 4rem;
+}
+header .flex h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 7.5rem;
+}
+header .flex button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fed136;
+  width: 24rem;
+  height: 6.5rem;
+  border-radius: 0.5rem;
+  border: 0.5rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.5);
+  transition: all ease 0.2s;
+}
+header .flex button:hover {
+  cursor: pointer;
+  color: #222222;
+  transform: translateY(-0.5rem);
+  box-shadow: 0rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+  max-width: 94rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
