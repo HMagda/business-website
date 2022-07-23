@@ -15,6 +15,10 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 header {
   height: 70.246rem;
   background: url("../images/Tint.jpg") no-repeat center center fixed;
@@ -70,7 +74,7 @@ header .flex h2 {
 header .flex h1 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 7.5rem;
+  font-size: 6rem;
 }
 header .flex button {
   font-family: "Montserrat", sans-serif;
@@ -96,4 +100,57 @@ header .flex button:hover {
 .wrapper {
   max-width: 94rem;
   margin: 0 auto;
+}
+
+.services {
+  padding: 12rem 0;
+}
+.services h1,
+.services h2 {
+  text-align: center;
+}
+.services h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.services h2 {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+}
+.services .flex {
+  display: flex;
+  padding-top: 7.6rem;
+}
+.services .flex .service-example {
+  padding-right: 3.4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.services .flex .service-example .circle {
+  height: 7.3rem;
+  width: 7.3rem;
+  background-image: url(../images/Circle-1.jpg);
+  position: relative;
+}
+.services .flex .service-example .circle .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.services .flex .service-example h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+.services .flex .service-example p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.services .flex .third {
+  padding-right: 0;
 }/*# sourceMappingURL=style.css.map */

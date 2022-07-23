@@ -1,9 +1,9 @@
 $color-light: #ffffff;
 $color-dark: #222222;
 $color-additional: #fed136;
-$font-family-primary: 'Montserrat', sans-serif;
+$font-family-primary: "Montserrat", sans-serif;
 $font-family-secondary: droid-serif, serif;
-$font-family-tertiary: 'Roboto Slab', serif;
+$font-family-tertiary: "Roboto Slab", serif;
 
 * *::before *::after {
     box-sizing: border-box;
@@ -22,6 +22,10 @@ h1 {
     font-family: $font-family-primary;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 header {
     height: 70.246rem;
     background: url("../images/Tint.jpg") no-repeat center center fixed;
@@ -30,7 +34,6 @@ header {
     position: relative;
 
     .navigation {
-        
         padding-top: 4.7rem;
 
         .container {
@@ -38,21 +41,20 @@ header {
             justify-content: space-between;
 
             .logo {
-                    
                 img {
                     height: 2.6rem;
                 }
             }
-    
+
             ul {
                 margin-top: 0;
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
-                    
+
                 li {
                     padding-left: 2rem;
-    
+
                     a {
                         color: $color-light;
                         text-decoration: none;
@@ -66,7 +68,6 @@ header {
     }
 
     .flex {
-
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -79,20 +80,20 @@ header {
         h1 {
             color: $color-light;
         }
-    
+
         h2 {
             text-transform: capitalize;
             font-style: italic;
             font-family: $font-family-secondary;
             font-size: 4rem;
         }
-    
+
         h1 {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 7.5rem;
+            font-size: 6rem;
         }
-    
+
         button {
             font-family: $font-family-primary;
             font-weight: bold;
@@ -102,16 +103,16 @@ header {
             background-color: $color-additional;
             width: 24rem;
             height: 6.5rem;
-            border-radius: .5rem;
-            border: .5rem;
-            box-shadow: 0rem .5rem 1rem 0rem rgba(0, 0, 0, 0.5);
+            border-radius: 0.5rem;
+            border: 0.5rem;
+            box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.5);
             transition: all ease 0.2s;
-            
+
             &:hover {
                 cursor: pointer;
                 color: $color-dark;
-                transform: translateY(-.5rem);
-                box-shadow: 0rem 1rem 2rem .2rem rgba(0, 0, 0, 0.25);
+                transform: translateY(-0.5rem);
+                box-shadow: 0rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.25);
             }
         }
     }
@@ -120,4 +121,72 @@ header {
 .wrapper {
     max-width: 94rem;
     margin: 0 auto;
+}
+
+.services {
+
+    padding: 12rem 0;
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-family: $font-family-tertiary;
+        font-style: italic;
+    }
+
+    .flex {
+
+        display: flex;
+        padding-top: 7.6rem;
+
+        .service-example {
+
+            padding-right: 3.4rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .circle {
+                height: 7.3rem;
+                width: 7.3rem;
+                background-image: url(../images/Circle-1.jpg);
+                position: relative;
+        
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            h3 {
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 1.8rem;
+                font-family: $font-family-primary;
+            }
+
+            p {
+                font-family: $font-family-tertiary;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+
+        .third {
+            padding-right: 0;
+        }
+
+    }
+    
 }
