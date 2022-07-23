@@ -151,7 +151,6 @@ header {
 }
 
 .services {
-
     .flex {
         display: flex;
         padding-top: 7.6rem;
@@ -197,8 +196,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
-        
+
         .portfolio-example {
             // flex-basis: 33.33%;
             display: flex;
@@ -208,9 +206,7 @@ header {
             max-height: 39rem;
             padding: 1rem;
 
-
             .img {
-
                 overflow: hidden;
 
                 img {
@@ -218,8 +214,8 @@ header {
                     width: 100%;
                     height: 100%;
                     vertical-align: middle;
-                    transition: .5s all ease-in-out;
-                    opacity: .8;
+                    transition: 0.5s all ease-in-out;
+                    opacity: 0.8;
 
                     &:hover {
                         transform: scale(1.2);
@@ -227,8 +223,6 @@ header {
                         cursor: pointer;
                     }
                 }
-
-
             }
 
             .portfolio-description {
@@ -236,7 +230,49 @@ header {
                 width: 100%;
                 text-align: center;
             }
-        
+        }
+    }
+}
+
+footer {
+    max-width: 94rem;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    p {
+        font-family: $font-family-primary;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        li {
+            width: 4rem;
+            height: 4rem;
+            background-color: $color-dark;
+            border-radius: 50%;
+            font-size: 0;
+            margin-right: 1.5rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            a {
+                i {
+                    font-size: 1.5rem;
+                    color: $color-light;
+                }
+            }
         }
     }
 }

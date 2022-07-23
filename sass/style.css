@@ -195,4 +195,41 @@ header .flex button:hover {
   background-color: #ffffff;
   width: 100%;
   text-align: center;
+}
+
+footer {
+  max-width: 94rem;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+footer ul li {
+  width: 4rem;
+  height: 4rem;
+  background-color: #222222;
+  border-radius: 50%;
+  font-size: 0;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+footer ul li a i {
+  font-size: 1.5rem;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
