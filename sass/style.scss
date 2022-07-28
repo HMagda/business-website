@@ -33,6 +33,18 @@ h3 {
     font-family: $font-family-primary;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .wrapper {
     max-width: 94rem;
     margin: 0 auto;
@@ -65,10 +77,10 @@ header {
     overflow: hidden;
     position: relative;
 
-    .navigation {
+    .container {
         padding-top: 4.7rem;
 
-        .container {
+        .nav-wrapper {
             display: flex;
             justify-content: space-between;
 
@@ -93,6 +105,11 @@ header {
                         font-size: 1.4rem;
                         text-transform: uppercase;
                         font-family: $font-family-primary;
+
+                        &:hover {
+                            color: $color-additional;
+                            border-color: $color-additional;
+                        }
                     }
                 }
             }
@@ -195,7 +212,7 @@ header {
         padding-top: 7.6rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
 
         .portfolio-example {
             // flex-basis: 33.33%;
@@ -274,5 +291,126 @@ footer {
                 }
             }
         }
+    }
+}
+
+// mobile nav
+
+.icon-hamburger {
+    width: 3rem;
+    height: 3rem;
+    color: #f7f7f7;
+}
+
+.primary-header {
+    margin-top: var(--size-700);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    #h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #btn {
+        font-size: 1.5rem;
+        width: 20rem;
+        height: 6rem;
+        margin-top: 2rem;
+    }
+
+    #flex {
+        flex-direction: column;
+    }
+
+    #portfolio {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #flex-portfolio {
+        justify-content: center;
+    }
+
+    .services {
+        .flex {
+            .service-example {
+                padding-right: 3rem;
+                padding-left: 3rem;
+            }
+        }
+    }
+
+    header {
+        .container {
+            padding-top: 2rem;
+        }
+    }
+
+    .primary-navigation {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+
+        padding: 3rem;
+        inset: 7rem 1rem auto;
+        background: $color-dark;
+        border-radius: 0.25rem;
+
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+
+        .nav-list {
+            flex-direction: column;
+            gap: 3rem;
+            text-align: center;
+            font-weight: 700;
+            padding-left: 0;
+
+            .li {
+                padding-left: 0;
+                z-index: 3;
+
+                a {
+                    color: $color-light;
+                    border-bottom: 0.1rem solid white;
+                    padding: 1.5rem;
+
+                    &:focus {
+                        color: $color-additional;
+                    }
+                }
+            }
+        }
+    }
+
+    .primary-navigation[data-visible] {
+        display: block;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+    }
+
+    .img-close {
+        content: url("../images/icon-close.png");
     }
 }
