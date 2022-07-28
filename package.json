@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "npm": "^8.15.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
   },
   "name": "learning-git-2",
   "version": "1.0.0",
@@ -22,7 +23,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "npm-run-all test:*",
     "test:html": "html-validate *.html",
-    "bulid": "npm-run-all bulid:* && npm run test",
+    "build": "npm-run-all build:*",
     "build:sass": "sass --style=compressed --no-source-map sass:css",
     "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
