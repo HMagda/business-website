@@ -38,7 +38,7 @@ h3 {
   border: 0;
 }
 
-.wrapper {
+.container {
   max-width: 94rem;
   margin: 0 auto;
 }
@@ -67,33 +67,33 @@ header {
   overflow: hidden;
   position: relative;
 }
-header .container {
+header .wrapper {
   padding-top: 4.7rem;
 }
-header .container .nav-wrapper {
+header .wrapper .nav-wrapper {
   display: flex;
   justify-content: space-between;
 }
-header .container .nav-wrapper .logo img {
+header .wrapper .nav-wrapper .logo img {
   height: 2.6rem;
 }
-header .container .nav-wrapper ul {
+header .wrapper .nav-wrapper ul {
   margin-top: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-header .container .nav-wrapper ul li {
+header .wrapper .nav-wrapper ul li {
   padding-left: 2rem;
 }
-header .container .nav-wrapper ul li a {
+header .wrapper .nav-wrapper ul li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.4rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
-header .container .nav-wrapper ul li a:hover {
+header .wrapper .nav-wrapper ul li a:hover {
   color: #fed136;
   border-color: #fed136;
 }
@@ -299,8 +299,14 @@ footer ul li a i {
     padding-right: 3rem;
     padding-left: 3rem;
   }
-  header .container {
+  .primary-header {
+    padding-bottom: 1.5rem;
+  }
+  .primary-header .wrapper {
     padding-top: 2rem;
+  }
+  .primary-header .wrapper .nav-wrapper {
+    padding: 3.5rem;
   }
   .primary-navigation {
     display: none;
@@ -343,5 +349,28 @@ footer ul li a i {
   }
   .img-close {
     content: url("../images/icon-close.png");
+  }
+  section {
+    padding-bottom: 3rem;
+  }
+  .services {
+    padding-top: 1.5rem;
+  }
+  .services .flex {
+    padding-top: 3rem;
+  }
+  .portfolio {
+    padding-top: 1.5rem;
+  }
+  .portfolio .flex {
+    padding-top: 3rem;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+  #footer p {
+    left: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

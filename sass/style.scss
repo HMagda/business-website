@@ -45,7 +45,7 @@ h3 {
     border: 0;
 }
 
-.wrapper {
+.container {
     max-width: 94rem;
     margin: 0 auto;
 }
@@ -77,12 +77,13 @@ header {
     overflow: hidden;
     position: relative;
 
-    .container {
+    .wrapper {
         padding-top: 4.7rem;
 
         .nav-wrapper {
             display: flex;
             justify-content: space-between;
+            
 
             .logo {
                 img {
@@ -356,9 +357,16 @@ footer {
         }
     }
 
-    header {
-        .container {
+    .primary-header {
+
+        padding-bottom: 1.5rem;
+
+        .wrapper {
             padding-top: 2rem;
+
+            .nav-wrapper {
+                padding: 3.5rem;
+            }
         }
     }
 
@@ -413,4 +421,35 @@ footer {
     .img-close {
         content: url("../images/icon-close.png");
     }
+
+    section {
+        padding-bottom: 3rem;
+    }
+
+    .services {
+        padding-top: 1.5rem;
+
+        .flex {
+            padding-top: 3rem;
+        }
+    }
+    
+    .portfolio {
+        padding-top: 1.5rem;
+
+        .flex {
+            padding-top: 3rem;
+        }
+    }
+    
+    #footer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+    
+        p {
+            left: 2rem;
+        }
+    }
 }
+
